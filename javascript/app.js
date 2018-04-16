@@ -106,6 +106,8 @@ $(document).ready(function () {
         // .catch(function(arg1, arg2) { console.log(arg1, arg2) })
 
     
+
+
     database.ref().on("child_added", function(snapshot) {
 
         word = snapshot.val().word;

@@ -1,7 +1,12 @@
 .wrapper {
     display: flex;
     align-items: stretch;
-}          
+} 
+
+#bookLogo {
+    width: 100%;
+    height: 100%;
+}
 
 #sidebar {
     min-width: 250px;
@@ -30,7 +35,7 @@ a[aria-expanded="true"]::before {
     content: '\e260';
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
     }
