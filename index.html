@@ -6,7 +6,7 @@
     <title>Tell Me Something I Don't Know</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/newstyle.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/sidebar.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.css">
@@ -36,7 +36,7 @@
     </div>
 </div> -->
 
-    <!-- 
+    
     <div class="wrapper">
         <nav id="sidebar">
 
@@ -67,14 +67,14 @@
                 Toggle Sidebar
             </button>
         <div>
-    </div> -->
+    </div>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 centered">
+            <div class="col-md-12 centered titlePage">
                 <div class="jumbotron">
-                        <h1>Tell Me Something I Don't Know</h1>
-                        <h3>Learning All of the Things</h3>
+                    <h1>Tell Me Something I Don't Know</h1>
+                    <h3>Learning All of the Things</h3>
                 </div>
             </div>
         </div>
@@ -83,9 +83,9 @@
     <br>
     <br>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 leftBoxMainPage">
                 <div class="input-group">
                     <span class="input-group-btn">
                         <button class="button" type="button" id="dictionarySearch">Search!</button>
@@ -97,6 +97,7 @@
                         <p id="dictionaryDefinition">Definition Goes Here...</p>
                     </section>
                 </div>
+                <audio id="dictionaryAudio" controls src=" "></audio>
             </div>    
 
             <div class="col-lg-6">
@@ -111,14 +112,14 @@
                                     </tr>
                                 </thead>
                                 <tbody id="wordTable">
-                                    <tr>
+                                    <!-- <tr>
                                         <td>Baseball</td>
                                         <td>4/12/2018 12:48 PM</td>
                                     </tr>
                                     <tr>
                                         <td>Programming</td>
                                         <td>4/12/2018 1:22 PM</td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
@@ -127,9 +128,6 @@
             </div> 
         </div>                 
     </div>        
-
-    <audio id="dictionaryAudio" controls src=" "></audio>
-
 
     <div id="modal-alert2" aria-hidden="true" aria-labelledby="modal-alert2" role="dialog" class="iziModal"></div>
 
