@@ -100,7 +100,7 @@ $(document).ready(function () {
         }).then(function(res) { 
             console.log(res) 
             console.log('data:audio/mp3;base64,' + res.audioContent);
-            $('#pButton').attr('src', 'data:audio/mp3;base64,' + res.audioContent);
+            $('#dictionaryAudio').attr('src', 'data:audio/mp3;base64,' + res.audioContent);
         });
     };    
         // .catch(function(arg1, arg2) { console.log(arg1, arg2) })
@@ -120,6 +120,10 @@ $(document).ready(function () {
         // Handle the errors
     }, function(errorObject) {
         console.log("Errors handled: " + errorObject.code);
+    });
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
     });
 
 });
