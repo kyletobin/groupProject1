@@ -11,7 +11,7 @@ $(document).ready(function () {
         if (/^[a-zA-Z ]*$/.test(wikiSearchWord) == false) { //add or for if a number or unfound word was entered
             $("#modal-alert2").iziModal({
                 title: "Error!",
-                subtitle: 'Please enter only one word. No numbers or symbols',
+                subtitle: 'Please enter only words. No numbers or symbols',
                 icon: 'icon-power_settings_new',
                 headerColor: '#BD5B5B',
                 width: 600,
@@ -43,7 +43,7 @@ $(document).ready(function () {
 
                 // database.ref().push(newWord);
 
-                // callGoogle();
+                callGoogle();
             });
         };    
     });
@@ -59,7 +59,7 @@ $(document).ready(function () {
             dataType: 'json',
             data: JSON.stringify({
                 input: {
-                text: $('#dictionaryDefinition').text(),
+                text: $('#wikiDefinition').text(),
                 },
                 voice: {
                 languageCode: 'en-US',
@@ -72,7 +72,7 @@ $(document).ready(function () {
         }).then(function(res) { 
             console.log(res) 
             console.log('data:audio/mp3;base64,' + res.audioContent);
-            $('#pButton').attr('src', 'data:audio/mp3;base64,' + res.audioContent);
+            $('#wikiAudio').attr('src', 'data:audio/mp3;base64,' + res.audioContent);
         });
     }; 
     

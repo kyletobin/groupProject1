@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tell Me Something I Don't Know</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/newstyle.css"/>   
+    <link rel="stylesheet" type="text/css" media="screen" href="css/sidebar.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.css">
+</head>
+
+<body>
+   
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div>
+                <img id="bookLogo" src="images/booklogo2.jpg" alt="Book logo">
+            </div>
+            <div class="sidebar-header">
+                <h3>Tell Me Something I Don't Know - Sidebar</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="wiki.html">Wiki Speech</a></li>
+                <li><a href="texttospeech.html">Text to Speech</a></li>
+                <li><a href="creators.html">Creators</a></li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <i class="glyphicon glyphicon-align-left"></i>
+                Toggle Sidebar
+            </button>
+        <div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 centered titlePage">
+                <div class="jumbotron">
+                    <h1>Tell Me Something I Don't Know</h1>
+                    <h3>Learning All of the Things</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-md-offset-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="button" type="button" id="textToSpeechBtn">Go!</button>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Input" onfocus="this.value=''" id="ttsInput">
+                </div>
+            </div>
+        </div>
+
+        <audio id="ttsAudio" controls src=" "></audio>
+
+    </div>        
+
+    <div id="modal-alert2" aria-hidden="true" aria-labelledby="modal-alert2" role="dialog" class="iziModal"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.22.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="javascript/tts.js"></script>
+    <script src="javascript/sidebar.js"></script>
+
+
+</body>
+
+</html>

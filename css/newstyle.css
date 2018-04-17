@@ -160,3 +160,22 @@ td {
     border-radius: 25px;
 }
 
+#textToSpeechBtn {
+    background-color: lightblue;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    border: solid 2px black;
+}
+
+#ttsInput {
+    margin-left: 10px;
+    height: 52px;
+    font-size: 20px;
+    border-radius: 10px;
+} 
+
+#ttsAudio {
+    margin-top: 10px;
+}
