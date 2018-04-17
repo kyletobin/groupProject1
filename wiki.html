@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tell Me Something I Don't Know</title>
+    <title>Wiki Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -38,42 +38,43 @@
                 <i class="glyphicon glyphicon-align-left"></i>
                 Toggle Sidebar
             </button>
-        <div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 centered titlePage">
-                <div class="jumbotron">
-                    <h1>Tell Me Something I Don't Know</h1>
-                    <h3>Learning All of the Things</h3>
+        <!-- <div>
+    </div> -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 centered titlePage">
+                        <div class="jumbotron">
+                            <h1>Tell Me Something I Don't Know</h1>
+                            <h3>Learning All of the Things</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-md-offset-2">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="button" type="button" id="wikiSearch">Search!</button>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Search for..." onfocus="this.value=''" id="wikiWord">
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="row">
+                    <div class="col-lg-12 wikibox">
+                        <p id="wikiDefinition">Your requested information...</p>
+                    </div>    
+                </div>
+
+                <audio id="wikiAudio" controls src=" "></audio>
+
+            </div>  
         </div>
     </div>
-
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-8 col-md-offset-2">
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button class="button" type="button" id="wikiSearch">Search!</button>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Search for..." onfocus="this.value=''" id="wikiWord">
-                </div>
-            </div>
-        </div>
-            
-        <div class="row">
-            <div class="col-lg-12 wikibox">
-                <p id="wikiDefinition">Your requested information...</p>
-            </div>    
-        </div>
-
-        <audio id="wikiAudio" controls src=" "></audio>
-
-    </div>        
 
     <div id="modal-alert2" aria-hidden="true" aria-labelledby="modal-alert2" role="dialog" class="iziModal"></div>
 

@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tell Me Something I Don't Know</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/newstyle.css"/>   
@@ -37,36 +36,36 @@
                 <i class="glyphicon glyphicon-align-left"></i>
                 Toggle Sidebar
             </button>
-        <div>
-    </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 centered titlePage">
-                <div class="jumbotron">
-                    <h1>Tell Me Something I Don't Know</h1>
-                    <h3>Learning All of the Things</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 centered titlePage">
+                        <div class="jumbotron">
+                            <h1>Tell Me Something I Don't Know</h1>
+                            <h3>Learning All of the Things</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-8 col-md-offset-2">
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button class="button" type="button" id="textToSpeechBtn">Go!</button>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Input" onfocus="this.value=''" id="ttsInput">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-md-offset-2">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="button" type="button" id="textToSpeechBtn">Go!</button>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Input" onfocus="this.value=''" id="ttsInput">
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+                <audio id="ttsAudio" controls src=" "></audio>
+
+            </div> 
         </div>
-
-        <audio id="ttsAudio" controls src=" "></audio>
-
-    </div>        
+    </div>           
 
     <div id="modal-alert2" aria-hidden="true" aria-labelledby="modal-alert2" role="dialog" class="iziModal"></div>
 

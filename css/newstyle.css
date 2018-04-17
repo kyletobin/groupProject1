@@ -108,7 +108,7 @@ td {
 @media screen and (max-width: 768px) {
     .container-fluid {
         margin-left: 20px;
-        margin-right: 20px
+        margin-right: 20px;
     }
 
 }
