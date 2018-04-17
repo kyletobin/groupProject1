@@ -2,11 +2,21 @@
     box-sizing: border-box;
 }
 
+/* main background images - change fonts and where they are referenced */
+
 body {
     font-family: 'Raleway', sans-serif;
-    background-image: url("../images/xback.jpg");
+    background-image: url("../images/paperback.jpg");
     background-size: 100%;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+}
+
+#wikiBody {
+    background-image: url("../images/paperback.jpg");
+}
+
+#ttsBody {
+    background-image: url("../images/paperback2.png");
 }
 
 .container-fluid {
@@ -14,14 +24,18 @@ body {
     margin-right: 100px
 }
 
+/* main index page */
+
 audio {
     margin: 0 auto;
     display: table;
+    margin-bottom: 50px;
 }
 
 .jumbotron {
-    background-image: url("../images/chalkboardbackground.jpg");
-    background-size: 100% 100%;
+    background-image: url("../images/books7.jpg");
+    /* background-image: url("../images/chalkboardbackground.jpg"); */
+    /* background-size: 100%; */
     color: white;
     text-align: center;
     margin-top: 20px;
@@ -32,7 +46,8 @@ audio {
 }
 
 .searchButton {
-    background-color: lightblue;
+    background-color: gray;
+    color: white;
     padding: 10px 25px;
     border-radius: 8px;
     font-size: 20px;
@@ -49,7 +64,7 @@ audio {
     margin-bottom: 10px;
     font-size: 20px;
     color: white;
-    background-image: url("../images/chalkboardbackground.jpg");
+    background-image: url("../images/blackboard.jpeg");
     border-radius: 25px;
 }
 
@@ -65,8 +80,9 @@ audio {
     padding: 10px;
     font-size: 20px;
     color: white;
-    background-image: url("../images/chalkboardbackground.jpg");
+    background-image: url("../images/blackboard.jpeg");
     border-radius: 25px;
+    margin-bottom: 20px;
 }
 
 th {
@@ -97,6 +113,8 @@ td {
 
 }
 
+/* about page */
+
 .aboutDescription {
     overflow-y: auto;
     height: 270px;
@@ -106,9 +124,11 @@ td {
     margin-bottom: 10px;
     font-size: 20px;
     color: white;
-    background-image: url("../images/chalkboardbackground.jpg");
+    background-image: url("../images/blackboard.jpeg");
     border-radius: 25px;
 }
+
+/* creators page */
 
 .one, .two, .three {
     overflow-y: auto;
@@ -119,7 +139,7 @@ td {
     margin-bottom: 25px;
     font-size: 20px;
     color: white;
-    background-image: url("../images/chalkboardbackground.jpg");
+    background-image: url("../images/blackboard.jpeg");
     border-radius: 25px;
 }
 
@@ -130,6 +150,8 @@ td {
     float: left;
     margin-right: 15px;
 }
+
+/* wiki page */
 
 #wikiSearch {
     background-color: lightblue;
@@ -156,9 +178,11 @@ td {
     margin-bottom: 10px;
     font-size: 20px;
     color: white;
-    background-image: url("../images/chalkboardbackground.jpg");
+    background-image: url("../images/blackboard.jpeg");
     border-radius: 25px;
 }
+
+/* tts page */
 
 #textToSpeechBtn {
     background-color: lightblue;
