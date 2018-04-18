@@ -1,10 +1,11 @@
 # Lexeme
 Type a word in the search input to see the definition. 
-Press audio button to have definition read out loud.
-User can search for a Wikipedia page and have page read out loud.
-To have an individual word read out loud user can click on text to speech page
+Press the audio button to have definition read out loud.
+User can search for a Wikipedia summary page and have the page read out loud.
+User can have any input read out loud using the text to speech page.
 
 # Technologies Used
+* HTML, CSS, Javascript
 * Google Fonts
 * jQuery
 *	Firebase
@@ -19,6 +20,7 @@ To have an individual word read out loud user can click on text to speech page
 - jQuery: visit http://code.jquery.com/
 - Firebase: https://firebase.google.com/
 - Bootstrap: https://getbootstrap.com/docs/3.3/
+- IziModal: http://izimodal.marcelodolce.com/
 - Google Fonts: https://fonts.google.com/
 - Moment.js: https://momentjs.com/
 - Wikipedia API: https://www.mediawiki.org/wiki/API:Main_page
