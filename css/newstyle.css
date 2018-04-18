@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-image: url("../images/paperback.jpg");
+    background-image: url("../images/paperback3.jpg");
     background-size: 100%;
     /* margin-bottom: 50px; */
 }
@@ -33,9 +33,9 @@ audio {
 }
 
 .jumbotron {
-    background-image: url("../images/books7.jpg");
+    background-image: url("../images/hangingbooks.jpg");
     /* background-image: url("../images/chalkboardbackground.jpg"); */
-    /* background-size: 100%; */
+    background-size: 100%;
     color: white;
     text-align: center;
     margin-top: 20px;
