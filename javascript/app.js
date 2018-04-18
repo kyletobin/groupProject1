@@ -26,7 +26,7 @@ $(document).ready(function () {
         let searchWord = $('#dictionaryWord').val().trim();
 
 
-        console.log(typeof searchWord);
+        // console.log(typeof searchWord);
         // || typeof searchWord === "string"
 
         // /\s/.test(searchWord) || 
@@ -70,7 +70,7 @@ $(document).ready(function () {
 
                 database.ref().push(newWord);
 
-                console.log(searchWord);
+                // console.log(searchWord);
                 callGoogle();
             });
         };    
@@ -98,21 +98,23 @@ $(document).ready(function () {
                 }
             })
         }).then(function(res) { 
-            console.log(res) 
+            // console.log(res) 
             console.log('data:audio/mp3;base64,' + res.audioContent);
-            $('#pButton').attr('src', 'data:audio/mp3;base64,' + res.audioContent);
+            $('#dictionaryAudio').attr('src', 'data:audio/mp3;base64,' + res.audioContent);
         });
     };    
         // .catch(function(arg1, arg2) { console.log(arg1, arg2) })
 
     
+
+
     database.ref().on("child_added", function(snapshot) {
 
         word = snapshot.val().word;
         time = snapshot.val().time;
 
         // Log everything that's coming out of snapshot
-        console.log(snapshot.val());
+        // console.log(snapshot.val());
 
         // Change the HTML table to reflect added train
         $('#wordTable').after("<tr><td>" + word + "</td><td>" + time + "</td></tr>");
@@ -121,5 +123,9 @@ $(document).ready(function () {
     }, function(errorObject) {
         console.log("Errors handled: " + errorObject.code);
     });
+
+    // $('#sidebarCollapse').on('click', function () {
+    //     $('#sidebar').toggleClass('active');
+    // });
 
 });

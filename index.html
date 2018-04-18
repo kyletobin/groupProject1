@@ -5,154 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tell Me Something I Don't Know</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/newstyle.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/sidebar.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.css">
-
 </head>
 
 <body>
         
     <!-- switch to header, not footer, or make a sidebar. switch search box into row, increase height of firebase box -->
-    <!-- move audio box below -->
     <!-- new background -->
     <!-- add text/websit logo to corner of header/footer -->
     <!-- space on search bar - round corners. change color -->
-
-<div class="sidebarcontainer">
     
-    <div class="sidebar">
-        <nav>
-            <p class="home" href="index.html">Home</p>
-                          
-            <p class="about" href="about.html">About</p>
-                           
-            <p class="creators" href="creators.html">Creators</p>
-                
-            <p class="news" href="news.html">News</p>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div>
+                <img id="bookLogo" src="images/booksidebar2.jpeg" alt="Book logo">
+            </div>
+            <div class="sidebar-header">
+                <h3>Tell Me Something I Don't Know</h3>
+            </div>
 
+            <ul class="list-unstyled components">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="wiki.html">Wiki Speech</a></li>
+                <li><a href="texttospeech.html">Text to Speech</a></li>
+                <li><a href="creators.html">Creators</a></li>
+            </ul>
         </nav>
-    </div>
-</div>
-    
 
+        <div id="content">
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <i class="glyphicon glyphicon-align-left"></i>
+                Toggle Sidebar
+            </button>
 
-    <div class="container">
-        <div class="jumbotron">
-                <h1>Tell Me Something I Don't Know</h1>
-                <h3>Learning All of the Things</h3>
-        </div>
-    </div>
-
-
-
-
-
-   <!--     <div class="row">
-            <div class="col-lg-6">
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button class="button" type="button" id="dictionarySearch">Search!</button>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Search for..." onfocus="this.value=''" id="dictionaryWord">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 centered titlePage">
+                        <div class="jumbotron">
+                            <h1>Tell Me Something I Don't Know</h1>
+                            <h3>Learning All of the Things</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div> -->
 
+            <br>
 
-<!--    <div id="audioplayer">
-        <button id="pButton" class="play" controls src=" "></button>
-        <!--<audio controls src=" "></audio> -->
-    <!--    <div id="timeline">
-            <div id="playhead"></div> 
-        
-        </div>
-    </div> -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                    <div class="input-group">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 leftBoxMainPage">
+                        <div class="input-group">
                             <span class="input-group-btn">
-                                <button class="button" type="button" id="dictionarySearch">Search!</button>
+                                <button class="searchButton" type="button" id="dictionarySearch">Search!</button>
                             </span>
                             <input type="text" class="form-control" placeholder="Search for..." onfocus="this.value=''" id="dictionaryWord">
                         </div>
-                <div id="main-box" class="definition">
-                    <section class="main-section">
-                        <p id="dictionaryDefinition">Definition Goes Here...</p>
-                    </section>
-                </div>
-            </div>    
+                        <div id="main-box" class="definition">
+                            <section class="main-section">
+                                <p id="dictionaryDefinition">Definition Goes Here...</p>
+                            </section>
+                        </div>
+                        <audio id="dictionaryAudio" controls src=" "></audio>
+                    </div>    
+
+                    <div class="col-lg-6">
+                        <div id="firebase-box" class="firebase">
+                            <section class="firebase-section">
+                                <div class = "scroll" >
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Word</th>
+                                                <th scope="col">Date Searched</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="wordTable">
+                                            <!-- <tr>
+                                                <td>Baseball</td>
+                                                <td>4/12/2018 12:48 PM</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Programming</td>
+                                                <td>4/12/2018 1:22 PM</td>
+                                            </tr> -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </div>
+                    </div> 
+                </div>                 
+            </div>        
         </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div id="firebase-box" class="firebase">
-                    <section class="firebase-section">
-                      <div class = "scroll" >
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Word</th>
-                                    <th scope="col">Date Searched</th>
-                                </tr>
-                            </thead>
-                            <tbody id="wordTable">
-                                <tr>
-                                    <td>Baseball</td>
-                                    <td>4/12/2018 12:48 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Programming</td>
-                                    <td>4/12/2018 1:22 PM</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                      </div>
-                    </section>
-                </div>
-            </div> 
-        </div> 
-    
-
-        <div id="audioplayer">
-                <button id="pButton" class="play" controls src=" "></button>
-                <!--<audio controls src=" "></audio> -->
-                <div id="timeline">
-                    <div id="playhead"></div>
-                
-                </div>
-            </div>
-    </div>        
+    </div>    
 
     <div id="modal-alert2" aria-hidden="true" aria-labelledby="modal-alert2" role="dialog" class="iziModal"></div>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.22.0/moment.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.js" type="text/javascript"></script>
+    <script src="javascript/sidebar.js"></script>
     <script src="javascript/app.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.js" type="text/javascript"></script>
 </body>
-
-<!--<footer>
-    <div class="">
-        <nav>
-            <a class="home" href="index.html">Home</a>
-          
-            <a class="about" href="about.html">About</a>
-           
-                <a class="creators" href="creators.html">Meet the Creators</a>
-
-                <a class="news" href="news.html">News</a>
-            </nav>
-                
-    </div>
-</footer> -->
 
 </html>

@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Creators</title>
+    <title>Tell Me Something I Don't Know</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/newstyle.css"/>   
     <link rel="stylesheet" type="text/css" media="screen" href="css/sidebar.css"/>
-   
 </head>
-<body>
-    
+
+<body id="ttsBody">
+   
     <div class="wrapper">
         <nav id="sidebar">
             <div>
@@ -36,45 +36,45 @@
                 <i class="glyphicon glyphicon-align-left"></i>
                 Toggle Sidebar
             </button>
-        <div>
-    </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 centered titlePage">
-                <div class="jumbotron">
-                    <h1>Tell Me Something I Don't Know</h1>
-                    <h3>Learning All of the Things</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div id="main-box" class="creatorInformation">
-                    <div class="one">
-                        <img src="images/paulpic.jpeg" class="creatorImage">
-                        <p>Hello World</p>
-                    </div>
-                    <div class="two">
-                        <img src="images/laurapic.jpeg" class="creatorImage">
-                        <p>Hello World</p>
-                    </div>
-                    <div class="three">
-                        <img src="" class="creatorImage">
-                        <p>Hello World</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 centered titlePage">
+                        <div class="jumbotron">
+                            <h1>Tell Me Something I Don't Know</h1>
+                            <h3>Learning All of the Things</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>    
 
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-md-offset-2">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="button" type="button" id="textToSpeechBtn">Go!</button>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Input" onfocus="this.value=''" id="ttsInput">
+                        </div>
+                    </div>
+                </div>
+
+                <audio id="ttsAudio" controls src=" "></audio>
+
+            </div> 
+        </div>
+    </div>           
+
+    <div id="modal-alert2" aria-hidden="true" aria-labelledby="modal-alert2" role="dialog" class="iziModal"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.22.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="javascript/tts.js"></script>
     <script src="javascript/sidebar.js"></script>
 
-    
 
 </body>
 
