@@ -1,4 +1,7 @@
-# Lexeme
+# Lexeme 
+
+https://kyletobin.github.io/groupProject1/
+
 Type a word in the search input to see the definition. 
 Press the audio button to have definition read out loud.
 User can search for a Wikipedia summary page and have the page read out loud.
@@ -35,5 +38,3 @@ User can have any input read out loud using the text to speech page.
 * Paul Rose
 * Kyle Tobin
 * Laura Wilson
-
-https://kyletobin.github.io/groupProject1/
